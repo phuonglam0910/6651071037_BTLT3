@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #eaf4ff,
+        #fff0f6
+    );
+
+    color: #333;
+}
+
+/* KHUNG CHÍNH */
+.container {
+    width: 600px;
+
+    max-width: 95%;
+
+    margin: 25px auto;
+
+    background: white;
+
+    padding: 18px 25px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 3px 15px #aaa;
+}
+
+/* TIÊU ĐỀ */
+h1 {
+    text-align: center;
+
+    margin: 0 0 15px;
+
+    font-size: 22px;
+
+    color: #087cf0;
+}
+
+/* FIELDSET */
+fieldset {
+    margin-bottom: 8px;
+
+    padding: 8px 12px;
+
+    border: 1px solid #aaa;
+
+    border-left: 4px solid #087cf0;
+
+    border-radius: 5px;
+
+    background: #f8fcff;
+}
+
+fieldset:nth-of-type(2) {
+    border-left-color: #e91e63;
+}
+
+fieldset:nth-of-type(3) {
+    border-left-color: #ff1744;
+}
+
+legend {
+    padding: 0 6px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    color: #075fc0;
+}
+
+fieldset:nth-of-type(2) legend {
+    color: #e91e63;
+}
+
+fieldset:nth-of-type(3) legend {
+    color: #ff1744;
+}
+
+/* DÒNG FORM */
+.form-row {
+    display: grid;
+
+    grid-template-columns: 150px 1fr;
+
+    align-items: center;
+
+    margin-bottom: 5px;
+}
+
+.form-row:last-child {
+    margin-bottom: 0;
+}
+
+label {
+    font-size: 11px;
+
+    color: #333;
+}
+
+/* INPUT */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+input[type="search"],
+input[type="date"] {
+    width: 100%;
+
+    height: 25px;
+
+    padding: 3px 6px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 3px;
+
+    font-size: 11px;
+
+    background-color: white;
+}
+
+input:focus {
+    outline: none;
+
+    border-color: #087cf0;
+
+    box-shadow: 0 0 3px #087cf0;
+}
+
+/* RANGE */
+input[type="range"] {
+    width: 100%;
+
+    accent-color: #e91e63;
+}
+
+/* COLOR */
+input[type="color"] {
+    width: 40px;
+
+    height: 25px;
+
+    padding: 1px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 3px;
+}
+
+/* RADIO */
+.radio-group {
+    font-size: 11px;
+}
+
+.radio-group label {
+    margin-right: 12px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #087cf0;
+}
+
+/* CHECKBOX */
+.checkbox-group {
+    font-size: 11px;
+}
+
+.checkbox-group label {
+    margin-right: 12px;
+}
+
+/* FILE */
+input[type="file"] {
+    font-size: 10px;
+
+    width: 100%;
+}
+
+/* NÚT */
+.buttons {
+    text-align: center;
+
+    margin-top: 12px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    border: none;
+
+    padding: 7px 15px;
+
+    margin: 0 3px;
+
+    border-radius: 4px;
+
+    color: white;
+
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #087cf0;
+}
+
+input[type="submit"]:hover {
+    background-color: #075fc0;
+}
+
+input[type="reset"] {
+    background-color: #e91e63;
+}
+
+input[type="reset"]:hover {
+    background-color: #c2185b;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+
+    .container {
+        padding: 15px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row label {
+        margin-bottom: 3px;
+    }
+
+    .radio-group,
+    .checkbox-group {
+        line-height: 1.8;
+    }
+}
