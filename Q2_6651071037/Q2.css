@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eaf4ff, #fff0f6);
+    color: #333;
+}
+
+/* KHUNG CHÍNH */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto 0;
+    background-color: white;
+    box-shadow: 0 4px 18px #aaa;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+}
+
+/* HEADER */
+body > .container > header {
+    height: 120px;
+    background: linear-gradient(
+        90deg,
+        #087cf0,
+        #00a6b8,
+        #e91e63
+    );
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+body > .container > header hgroup {
+    margin: 0;
+}
+
+body > .container > header h1 {
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+body > .container > header p {
+    margin: 8px 0 0;
+    font-size: 14px;
+}
+
+/* MENU */
+nav {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+nav a {
+    display: inline-block;
+    color: #333;
+    background-color: white;
+    text-decoration: none;
+
+    padding: 7px 20px;
+    margin: 0 3px;
+
+    border: 1px solid #ddd;
+    border-radius: 18px;
+
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #087cf0;
+    color: white;
+    border-color: #087cf0;
+}
+
+/* NỘI DUNG */
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 15px;
+
+    padding: 15px;
+
+    background: #f4f9ff;
+}
+
+/* BÀI VIẾT */
+article {
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-top: 4px solid #087cf0;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px #ddd;
+
+    overflow: hidden;
+}
+
+/* HEADER TRONG ARTICLE */
+article > header {
+    background: linear-gradient(
+        90deg,
+        #edf6ff,
+        #fff0f6
+    );
+
+    color: #333;
+
+    text-align: left;
+
+    padding: 14px 18px;
+
+    border-left: 4px solid #e91e63;
+    border-bottom: 1px solid #ddd;
+}
+
+article > header h2 {
+    margin: 0 0 7px;
+
+    font-size: 19px;
+
+    color: #075fc0;
+
+    line-height: 1.4;
+}
+
+article > header p {
+    margin: 0;
+
+    font-size: 12px;
+
+    color: #777;
+}
+
+/* NỘI DUNG BÀI VIẾT */
+article > p {
+    padding: 0 18px;
+
+    margin: 14px 0;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    text-align: justify;
+}
+
+/* TỪ KHÓA */
+article strong {
+    color: #e91e63;
+}
+
+article em {
+    color: #ff1744;
+    font-weight: bold;
+}
+
+/* FOOTER TRONG ARTICLE */
+article > footer {
+    background-color: #edf6ff;
+
+    border-top: 2px solid #e91e63;
+
+    padding: 9px 18px;
+
+    margin-top: 18px;
+
+    font-size: 12px;
+
+    color: #555;
+}
+
+article > footer p {
+    margin: 0;
+}
+
+/* ASIDE */
+aside {
+    background-color: white;
+
+    height: fit-content;
+
+    padding: 15px;
+
+    border: 1px solid #ddd;
+    border-top: 4px solid #e91e63;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px #ddd;
+}
+
+aside h3 {
+    margin: 0 0 12px;
+
+    padding-bottom: 8px;
+
+    color: #087cf0;
+
+    font-size: 17px;
+
+    border-bottom: 2px solid #ff1744;
+}
+
+aside ul {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+aside li {
+    padding: 10px 5px;
+
+    border-bottom: 1px solid #eee;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+aside li:last-child {
+    border-bottom: none;
+}
+
+aside a {
+    color: #444;
+
+    text-decoration: none;
+}
+
+aside a:hover {
+    color: #e91e63;
+}
+
+/* FOOTER */
+body > footer {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    background: linear-gradient(
+        90deg,
+        #087cf0,
+        #e91e63
+    );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 12px;
+
+    font-size: 11px;
+
+    box-shadow: 0 4px 15px #aaa;
+}
+
+address {
+    font-style: normal;
+
+    line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+
+    .container {
+        width: 95%;
+    }
+
+    body > footer {
+        width: 95%;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    body > .container > header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        margin: 3px;
+    }
+}

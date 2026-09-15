@@ -1,0 +1,328 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #dff2ff,
+        #fff0f5
+    );
+
+    color: #333;
+}
+
+
+/* KHUNG CHÍNH */
+
+.container {
+    width: 620px;
+    max-width: 95%;
+
+    margin: 25px auto;
+
+    background: white;
+
+    padding: 15px 22px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 3px 15px #aaa;
+}
+
+
+/* LOGO */
+
+.logo {
+    text-align: center;
+
+    margin-bottom: 5px;
+}
+
+.logo h1 {
+    margin: 0;
+
+    font-size: 25px;
+
+    color: #087cf0;
+}
+
+.logo h1 span {
+    color: #e91e63;
+}
+
+
+/* TIÊU ĐỀ */
+
+h2 {
+    text-align: center;
+
+    margin: 5px 0 15px;
+
+    font-size: 18px;
+
+    color: #333;
+}
+
+
+/* FORM */
+
+form {
+    width: 100%;
+}
+
+
+/* SECTION */
+
+fieldset {
+    margin-bottom: 9px;
+
+    padding: 9px 12px;
+
+    border: 1px solid #aaa;
+
+    border-left: 4px solid #087cf0;
+
+    border-radius: 5px;
+
+    background: #f9fcff;
+}
+
+fieldset:nth-of-type(2) {
+    border-left-color: #e91e63;
+}
+
+fieldset:nth-of-type(3) {
+    border-left-color: #ff1744;
+}
+
+fieldset:nth-of-type(4) {
+    border-left-color: #e91e63;
+}
+
+legend {
+    padding: 0 5px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    color: #075fc0;
+}
+
+fieldset:nth-of-type(2) legend {
+    color: #e91e63;
+}
+
+fieldset:nth-of-type(3) legend {
+    color: #ff1744;
+}
+
+fieldset:nth-of-type(4) legend {
+    color: #e91e63;
+}
+
+
+/* HÀNG FORM */
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 145px 1fr;
+
+    align-items: center;
+
+    margin-bottom: 6px;
+}
+
+.form-row:last-child {
+    margin-bottom: 0;
+}
+
+label {
+    font-size: 11px;
+
+    color: #333;
+}
+
+
+/* INPUT + SELECT */
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;
+
+    height: 27px;
+
+    padding: 3px 6px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 4px;
+
+    background: white;
+
+    font-size: 11px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+
+    border-color: #087cf0;
+
+    box-shadow: 0 0 3px #087cf0;
+}
+
+
+/* CHIA 2 CỘT */
+
+.flight-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+}
+
+.flight-item label {
+    display: block;
+
+    margin-bottom: 3px;
+}
+
+
+/* KẾT QUẢ */
+
+.result {
+    text-align: left;
+
+    font-size: 12px;
+
+    padding: 5px 0;
+}
+
+.result strong {
+    color: #ff1744;
+}
+
+output {
+    display: inline-block;
+
+    margin-left: 5px;
+
+    padding: 5px 9px;
+
+    min-width: 150px;
+
+    text-align: center;
+
+    border: 1px solid #e91e63;
+
+    border-radius: 4px;
+
+    background: #fff0f6;
+
+    color: #e91e63;
+
+    font-weight: bold;
+
+    font-size: 12px;
+}
+
+
+/* BẢO MẬT */
+
+.security {
+    padding: 7px;
+
+    background: #fff8f8;
+
+    border: 1px solid #ddd;
+
+    border-radius: 4px;
+
+    font-size: 10px;
+
+    color: #555;
+
+    line-height: 1.5;
+}
+
+.lock {
+    font-size: 18px;
+
+    margin-right: 5px;
+
+    color: #ff1744;
+}
+
+
+/* KEYGEN */
+
+keygen {
+    width: 100%;
+}
+
+
+/* NÚT */
+
+.button-area {
+    margin-top: 10px;
+}
+
+button {
+    width: 100%;
+
+    padding: 8px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        90deg,
+        #087cf0,
+        #e91e63
+    );
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(
+        90deg,
+        #075fc0,
+        #c2185b
+    );
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .flight-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row label {
+        margin-bottom: 3px;
+    }
+
+}
